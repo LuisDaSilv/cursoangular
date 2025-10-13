@@ -1,0 +1,10 @@
+  @for(day of data; track day; let index=$index){
+    @if(isMultipleOfFive(day - 1)){
+      <br>
+    }
+
+    <button [attr.data-index]="index" class="date-btn">{{day}}</button>
+  }
+  @empty{
+    No data available
+  }
