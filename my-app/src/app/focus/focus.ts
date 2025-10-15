@@ -9,8 +9,7 @@ import { DirectiveFocus } from '../directivefocus/directivefocus';
 })
 
 export class Focus {
-
-  focus = viewChild.required<ElementRef<HTMLInputElement>>('name')
+  focus = viewChild.required<ElementRef<HTMLInputElement>>('focus')
 
   constructor(){
     effect(()=>{

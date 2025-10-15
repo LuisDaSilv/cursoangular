@@ -4,8 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Service {
-  constructor() { 
-    console.log('Service created');
+  constructor() {
   }
 
   getName()

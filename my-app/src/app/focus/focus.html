@@ -1,5 +1,16 @@
 <form>
-  Name: <input type="text" #focus><br><br>
-  Phone: <input type="number" appHighlight name="phone"><br><br>
-  <input type="submit" value="Submit">
+  <div class="control">
+    <label for="name">Introduzca el nombre</label>
+    <input id="name" name="name" placeholder="name" #focus>
+  </div>
+  <!--
+  <div class="control">
+    <label for="phone">Introduzca el teléfono</label>
+    <input id="phone" name="phone" placeholder="phone" #focus>
+  </div>
+  -->
+  <div class="control">
+    <label for="phone">Introduzca el teléfono</label>
+    <input id="phone" name="phone" placeholder="phone" appFocusDirective>
+  </div>
 </form>
