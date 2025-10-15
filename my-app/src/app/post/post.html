@@ -1,0 +1,14 @@
+
+<div #start>
+    @defer (on viewport) {
+        <app-post-comments />
+    } @loading (minimum 500ms){
+        <img alt="loading..." src=".\loader.svc" />
+    } 
+    @error {
+        <div>erro</div>
+    }
+    @placeholder {
+        <p>Placeholder content</p>
+    }
+</div>

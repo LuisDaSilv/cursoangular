@@ -6,12 +6,12 @@ import { Counter } from './counter/counter';
 import { Timer } from './timer/timer';
 import { ParentSignal } from './input-signal/parent-signal/parent-signal';
 import { Focus } from './focus/focus';
-import { DirectiveFocus } from './directivefocus/directivefocus';
+import { Post } from './post/post';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Calendar, Parent, ParentContent, Counter, Timer, ParentSignal, Focus, DirectiveFocus],
+  imports: [Calendar, Parent, ParentContent, Counter, Timer, ParentSignal, Focus, Post],
   templateUrl: './app.html',
   styleUrl: './app.less'
 })
