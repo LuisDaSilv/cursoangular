@@ -1,8 +1,9 @@
 import { Component, signal, computed, inject, effect, DestroyRef } from '@angular/core';
+import { TimePipePipe } from '../time-pipe-pipe';
 
 @Component({
   selector: 'app-timer',
-  imports: [],
+  imports: [TimePipePipe],
   templateUrl: './timer.html',
   styleUrl: './timer.less'
 })

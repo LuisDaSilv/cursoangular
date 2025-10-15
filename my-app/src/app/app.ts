@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Directive } from '@angular/core';
 import { Calendar } from './calendar/calendar';
 import { Parent } from './input/parent/parent';
 import { Parent as ParentContent} from './content/parent/parent';
 import { Counter } from './counter/counter';
 import { Timer } from './timer/timer';
 import { ParentSignal } from './input-signal/parent-signal/parent-signal';
+import { Focus } from './focus/focus';
+import { DirectiveFocus } from './directivefocus/directivefocus';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Calendar, Parent, ParentContent, Counter, Timer, ParentSignal],
+  imports: [Calendar, Parent, ParentContent, Counter, Timer, ParentSignal, Focus, DirectiveFocus],
   templateUrl: './app.html',
   styleUrl: './app.less'
 })
