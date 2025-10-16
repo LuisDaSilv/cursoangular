@@ -7,11 +7,12 @@ import { Timer } from './timer/timer';
 import { ParentSignal } from './input-signal/parent-signal/parent-signal';
 import { Focus } from './focus/focus';
 import { Post } from './post/post';
+import { Pizzalist } from './pizzas/pizzalist/pizzalist';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Calendar, Parent, ParentContent, Counter, Timer, ParentSignal, Focus, Post],
+  imports: [Calendar, Parent, ParentContent, Counter, Timer, ParentSignal, Focus, Post, Pizzalist],
   templateUrl: './app.html',
   styleUrl: './app.less'
 })

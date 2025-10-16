@@ -1,0 +1,9 @@
+{
+    "pizzas": [
+        {"id":1,"name":"Margherita","ingredients":["tomato sauce","mozzarella","basil"],"price":8.5},
+        {"id":2,"name":"Pepperoni","ingredients":["tomato sauce","mozzarella","pepperoni"],"price":9.5},
+        {"id":3,"name":"Hawaiian","ingredients":["tomato sauce","mozzarella","ham","pineapple"],"price":10.0},
+        {"id":4,"name":"Veggie","ingredients":["tomato sauce","mozzarella","bell peppers","onions","mushrooms","olives"],"price":9.0},
+        {"id":5,"name":"BBQ Chicken","ingredients":["BBQ sauce","mozzarella","grilled chicken","red onions","cilantro"],"price":11.0}
+    ]
+}
