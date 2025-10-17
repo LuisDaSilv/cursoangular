@@ -34,7 +34,7 @@ export class Pizzalist extends SpinnerComponent {
   }
   @WithSpinner()
   private async loadData(){
-    /*try{
+    try{
       //spinner.on
       const pizzas = await this.service.getAll()
       this.pizzas.set(pizzas)
@@ -44,10 +44,10 @@ export class Pizzalist extends SpinnerComponent {
     }
     finally{
       //spinner off
-    }*/
+    }
 
-    const pizzas = await this.service.getAll()
-    this.pizzas.set(pizzas)
+    //const pizzas = await this.service.getAll()
+    //this.pizzas.set(pizzas)
   }
   @HostListener('click', ['$event'])
   selectPizza(ev: Event) {
