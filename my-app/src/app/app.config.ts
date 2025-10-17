@@ -1,15 +1,24 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, InjectionToken, provideBrowserGlobalErrorListeners, provideZoneChangeDetection, provideZonelessChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { provideHttpClient } from '@angular/common/http';
+import { Service } from './service/service';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { BASE_URL } from './base_url';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    {
+      provide:BASE_URL,
+      useValue:'http://localhost:3000'
+    },
+    Service,
     provideBrowserGlobalErrorListeners(),
-    provideZoneChangeDetection(),
+    provideZonelessChangeDetection(),
     //provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideHttpClient()
+    provideHttpClient(
+      withFetch()
+    )
   ]
 };

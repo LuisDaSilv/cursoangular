@@ -1,6 +1,5 @@
-import { Component, input } from '@angular/core';
+import { Component,input } from '@angular/core';
 import { Pizza } from '../pizza';
-
 @Component({
   selector: 'app-pizzaitem',
   imports: [],
@@ -8,5 +7,8 @@ import { Pizza } from '../pizza';
   styleUrl: './pizzaitem.less'
 })
 export class Pizzaitem {
-  pizza = input.required<Pizza>();
+
+  pizza=input.required<Pizza>()
+
+
 }

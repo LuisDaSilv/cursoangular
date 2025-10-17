@@ -1,7 +1,4 @@
-<div>
-  <h2>{{ pizza().id }}</h2>
-  <h2>{{ pizza().name }}</h2>
-  <p>Ingredients: {{ pizza().ingredients.join(', ') }}</p>
-  <p>Price: {{ pizza().price }}</p>
-  <button [attr.data_pizza_id]="pizza().id">Add to Cart</button>
-</div>
+<div>{{pizza().id}}</div>
+<div>{{pizza().name}}</div>
+<div>{{pizza().price}}</div>
+<button [attr.data-pizza-id]="pizza().id">Add Carrio</button>

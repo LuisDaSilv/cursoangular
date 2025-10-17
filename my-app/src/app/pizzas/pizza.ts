@@ -1,6 +1,5 @@
 export interface Pizza {
-    id:string,
-    name:string,
-    ingredients:string[],
-    price:number
+  id:string,
+  name:string,
+  price:number
 }
